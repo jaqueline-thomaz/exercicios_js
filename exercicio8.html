@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Qual seu nome?");
+        let interesses = [];
+        let item = prompt("Digite algo que voce curte (ou fim para parar)");
+        
+
+        while (item !== "fim"){
+            interesses.push(item);
+            item = prompt("Mais um? (ou fim para parar)");
+    }
+        let aprender = prompt("O que você quer aprender a criar?");
+
+        document.write("<h1>" + nome + "</h2>");
+
+        if (interesses.length === 0){
+            document.write("Voce não contou nehum interesse.");
+        } else {
+            document.write("<p>Coisas que eu curto:</p>");
+            for (let i = 0; i < interesses.length; i++){
+                document.write("• " + interesses[i] + "<br>");
+            }
+        }
+
+        document.write("<br>" + nome + " tem " + interesses.length + " interesses.");
+        document.write("<br>" + nome + " quer aprender a criar " + aprender + ".");
+
+        //porque não sabemos quantas vezes vai repetir
+    </script>
+</body>
+</html>

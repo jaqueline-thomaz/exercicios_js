@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script>
+        let idade = Number(prompt("Quantos anos tem?"));
+
+        if (idade >= 18){
+            alert("Já pode tirar a cnh.");
+        } else if (idade >= 16){
+            alert("Você já pode votar, mas dirigir ainda não.");
+        }
+        else {
+            let falta = 18 - idade;
+            alert("Faltam " + falta + " anos para tirar a cnh.");
+        }
+      
+        // >= maior ou igual, precisamos do number para colocar um numero como resposta
+    </script>
+
+</body>
+</html>

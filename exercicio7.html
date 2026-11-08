@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+        let opcao = prompt("Escolha um plano:\n - Básico\n - Padrão\n - Premium\n - Familia");
+
+        switch (opcao){
+            case "1": alert("Básico: R$ 20 por mes"); break;
+            case "2": alert("Padrão: R$ 35 por mes"); break;
+            case "3": alert("Premium: R$ 50 por mes"); break;
+            case "4": alert("Familia: R$ 60 por mes"); break;
+            default: alert("Opção inválida");
+        }
+
+        // para quebrar os cases, o default aparece quando não colocar uma opção válida de 1 a 4
+    </script>
+</body>
+</html>
